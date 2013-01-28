@@ -222,7 +222,7 @@ if (!class_exists("wpsocialite")) {
 			$post_types = get_option('wpsocialite_post_types',array());
 			$pt = get_post_type();
 
-			if ($single && !is_single()) //Do not display unless single if user specified
+			if ($single && !is_singular()) //Do not display unless single if user specified
 				return $content;
 
 			if($post_types){
